@@ -1,0 +1,190 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text{
+    text-align: center;
+    color: #251ea3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "sidebar-left content sidebar-right"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+
+.header {
+    grid-area: header;
+  
+    background: #251ea3;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+
+
+.navbar {
+    background: #e68080;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 15px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: #f4adad;
+}
+
+
+
+
+
+.sidebar-left {
+    grid-area: sidebar-left;
+    background: #82c4e8;
+    padding: 10px;
+}
+
+.sidebar-left ul {
+    list-style: none;
+}
+
+.sidebar-left li a {
+    text-decoration: none;
+    color: #161316;
+    display: block;
+    padding: 5px 0;
+}
+
+.sidebar-left li a:hover {
+    background: #f98989;
+}
+
+/* Main Content */
+.content {
+    grid-area: content;
+    background: #ccc6c6;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #f5f6f6;
+    background-color: #536066;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #929090;
+}
+
+
+
+.services {
+    margin-top: 40px;
+}
+
+.services h2 {
+    margin-bottom: 10px;
+}
+.services a:hover {
+    background: #555;
+}
+
+
+
+.contact {
+    margin-top: 40px;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+
+
+.sidebar-right {
+    grid-area: sidebar-right;
+    background: #5099d6;
+    padding: 10px;
+}
+
+
+
+.footer {
+    grid-area: footer;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "header"
+            "content"
+            "sidebar-left"
+            "sidebar-right"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}

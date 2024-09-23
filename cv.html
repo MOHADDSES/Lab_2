@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><marquee behavior="scroll" direction="lef">MOHADDES CV</marquee>
+    </h1>
+    
+
+    <form action="/submit-cv" method="post">
+        <!-- Personal Information -->
+        <fieldset style="background-color: antiquewhite;">
+        
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">Father Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">Mther Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">NID:</label>
+            <input type="number" id="nid" name="nid" required>
+
+            <label for="dob">Date of Brithday:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="blood">Blood Group:</label>
+            <input type="text" id="blood" name="blood" required>
+            <!-- <select name="blood" id="blood">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="A-">B+</option>
+                <option value="A-">B-</option>
+                <option value="A-">AB+</option>
+                <option value="A-">AB-</option>
+                <option value="A-">O+</option>
+                <option value="A-">O-</option>
+                
+            </select>  -->
+           
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+
+        <!-- Education -->
+        <fieldset style="background-color: aquamarine;">
+            <legend>Education</legend>
+            <fieldset>
+                <legend>SSC</legend>
+
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" name="institution" required>
+
+            <label for="Group">Group:</label>
+            <input type="text" id="Group" name="Group" required>
+
+            <label for="passing-year">Passing Year:</label>
+            <input type="number" id="Passing-year" name="passing-year" min="1900" max="2100" required>
+
+            <label for="cgpa">CGPA:</label>
+            <input type="number" id="cgpa" name="cgpa" max="4" required>
+        </fieldset>
+
+            <fieldset>
+                <legend>HSC</legend>
+                <label for="college-name">College-Name:</label>
+            <input type="text" id="college-name" name="college-name" required>
+
+            <label for="Group">Group:</label>
+            <input type="text" id="Group" name="Group" required>
+
+            <label for="passing-year">Passing Year:</label>
+            <input type="number" id="Passing-year" name="passing-year" min="1900" max="2100" required>
+
+            <label for="cgpa">CGPA:</label>
+            <input type="number" id="cgpa" name="cgpa" max="4" required>
+            
+            </fieldset>
+            <fieldset>
+                <legend>Hon's</legend>
+                <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" required>
+
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" name="institution" required>
+
+            <label for="graduation-year">Graduation Year:</label>
+            <input type="number" id="graduation-year" name="graduation-year" min="1900" max="2100" required>
+
+            <label for="cgpa">CGPA:</label>
+            <input type="number" id="cgpa" name="cgpa" max="4" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Master's</legend>
+                <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" required>
+
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" name="institution" required>
+
+            <label for="graduation-year">Graduation Year:</label>
+            <input type="number" id="graduation-year" name="graduation-year" min="1900" max="2100" required>
+
+            <label for="cgpa">CGPA:</label>
+            <input type="number" id="cgpa" name="cgpa" max="4" required>
+            </fieldset>
+
+           
+
+
+            
+
+
+            
+        </fieldset>
+
+        <!-- Work Experience -->
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title" required>
+
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="experience-duration">Duration:</label>
+            <input type="text" id="experience-duration" name="experience-duration" placeholder="Enter your Job Experience" required>
+
+            <label for="responsibilities">Responsibilities:</label>
+            <textarea id="responsibilities" name="responsibilities" rows="4" required></textarea>
+        </fieldset>
+
+        <!-- Skills -->
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">List your skills:</label>
+            <textarea id="skills" name="skills" rows="4" placeholder="Enter your Skills" required></textarea>
+        </fieldset>
+
+        <!-- Certifications -->
+        <fieldset>
+            <legend>Certifications</legend>
+            <label for="certifications">Certifications:</label>
+            <textarea id="certifications" name="certifications" rows="4" placeholder="Enter Year Certifications" required></textarea>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit CV</button>
+    </form>
+</body>
+</html>
